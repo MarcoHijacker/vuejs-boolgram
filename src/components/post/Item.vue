@@ -60,7 +60,7 @@ export default {
     }),
     computed: {
         displayComments() {
-           return this.showMore.status ? this.data.comments : this.data.comments.slice(0, 3)
+           return this.showMore.status ? this.data.comments : this.data.comments.slice(0, 3);
         },
         showTime() {
             var myFullDate = this.data.date.date;

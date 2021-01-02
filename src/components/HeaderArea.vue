@@ -38,7 +38,22 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (max-width: 1100px) {
+  header {
+    padding: 15px 150px !important;
+  }
+}
+@media only screen and (max-width: 800px) {
   .searchbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 15px 50px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .userinfo i {
     display: none;
   }
 }

@@ -49,13 +49,31 @@ export default {
     }
   }
 }
-
 @media only screen and (max-width: 1300px) {
   .fullBlock {
     padding-top: 0 !important;
   }
 }
-
+@media only screen and (max-width: 1100px) {
+  .fullBlock {
+    .rightBlock {
+      padding-right: 150px !important;
+    }
+    .leftBlock {
+      padding-left: 150px !important;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .fullBlock {
+    .rightBlock {
+      padding-right: 50px !important;
+    }
+    .leftBlock {
+      padding-left: 50px !important;
+    }
+  }
+}
 * {
   padding: 0;
   margin: 0;
