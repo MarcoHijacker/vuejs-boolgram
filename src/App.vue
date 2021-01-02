@@ -67,10 +67,10 @@ export default {
 @media only screen and (max-width: 700px) {
   .fullBlock {
     .rightBlock {
-      padding-right: 50px !important;
+      padding-right: 30px !important;
     }
     .leftBlock {
-      padding-left: 50px !important;
+      padding-left: 30px !important;
     }
   }
 }

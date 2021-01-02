@@ -49,7 +49,7 @@ export default {
 }
 @media only screen and (max-width: 700px) {
   header {
-    padding: 15px 50px !important;
+    padding: 15px 30px !important;
   }
 }
 @media only screen and (max-width: 500px) {
