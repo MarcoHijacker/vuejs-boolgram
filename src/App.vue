@@ -11,6 +11,7 @@
         <SuggProfiles/>
       </div>
     </div>
+    <FooterArea/>
   </div>
 
 </template>
@@ -21,6 +22,7 @@ import SuggProfiles from './components/SuggProfiles.vue'
 import SuggStories from './components/SuggStories.vue'
 import HeaderArea from './components/HeaderArea.vue'
 import PostsList from './components/post/List.vue'
+import FooterArea from './components/FooterArea.vue'
 
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     SuggProfiles,
     SuggStories,
     HeaderArea,
-    PostsList
+    PostsList,
+    FooterArea
   }
 }
 
@@ -37,6 +40,21 @@ export default {
 <style lang="scss">
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+@media only screen and (max-width: 1300px) {
+  .fullBlock {
+    .leftBlock {
+      width: 100%;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .fullBlock {
+    padding-top: 0 !important;
+  }
+}
 
 * {
   padding: 0;
@@ -59,10 +77,10 @@ body {
   padding-top: 50px;
 }
 .leftBlock {
-  padding-left: 200px;
+  padding-left: 300px;
 }
 .rightBlock {
-  padding-right: 200px;
+  padding-right: 300px;
 }
 
 </style>

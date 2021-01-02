@@ -8,8 +8,10 @@
       <input type="text" name="searchbar" value="" placeholder="Cerca">
     </div>
     <div class="userinfo">
-      <i class="far fa-heart"></i>
       <i class="fas fa-home"></i>
+      <i class="far fa-paper-plane"></i>
+      <i class="far fa-compass"></i>
+      <i class="far fa-heart"></i>
       <img src="https://i.imgur.com/TXzx3Df.jpg" class="profileHead">
     </div>
   </header>
@@ -35,43 +37,51 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Dancing Script', cursive;
-    background-color: white;
-    padding: 15px 200px;
-    border-bottom: solid 2px #e9e9e9;
-    #logo {
-      font-weight: bolder;
-      font-size: 40px;
-      cursor: pointer;
-    }
-    .searchbar {
-      input {
-        height: 30px;
-        border: solid 2px #e9e9e9;
-        text-align: center;
-        margin-top: 10px;
-        background-color: #fafafa;
-      }
-    }
-    div.userinfo {
-      display: flex;
-      align-items: center;
-      // padding-top: 14px;
-      i {
-        cursor: pointer;
-        margin-right: 15px;
-        font-size: 18px;
-      }
-      img {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        cursor: pointer;
-      }
+@media only screen and (max-width: 1100px) {
+  .searchbar {
+    display: none;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Dancing Script', cursive;
+  background-color: white;
+  padding: 15px 300px;
+  border-bottom: solid 2px #e9e9e9;
+  #logo {
+    font-weight: bolder;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .searchbar {
+    input {
+      height: 30px;
+      border: solid 2px #e9e9e9;
+      text-align: center;
+      margin-top: 10px;
+      background-color: #fafafa;
     }
   }
+  div.userinfo {
+    display: flex;
+    align-items: center;
+    // padding-top: 14px;
+    i {
+      cursor: pointer;
+      margin-right: 15px;
+      font-size: 18px;
+      &:hover {
+        color: rgb(238, 39, 87);
+      }
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
 
 </style>

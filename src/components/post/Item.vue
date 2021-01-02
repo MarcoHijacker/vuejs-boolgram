@@ -87,7 +87,6 @@ export default {
             return this.showMore.status ? "Nascondi" : "Mostra";
         }
     }
-
 }
 
 </script>
@@ -95,12 +94,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
+@media only screen and (max-width: 1300px) {
+  .singlePost {
+    margin-right: 0 !important;
+  }
+}
 div.singlePost {
   padding: 0;
   background-color: white;
   border: solid 2px #e9e9e9;
   border-radius: 2px;
-  margin-right: 50px;
+  margin-right: 30px;
   margin-top: 50px;
   img.profilePicPost {
     width: 48px;

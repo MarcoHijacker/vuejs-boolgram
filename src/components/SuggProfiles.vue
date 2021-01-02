@@ -1,6 +1,6 @@
 <template>
 
-  <div class="suggprofiles">
+  <div class="suggProfiles">
     <ul>
       <li>
         <img src="https://i.imgur.com/TXzx3Df.jpg" class="profileOwn">
@@ -8,7 +8,7 @@
           <span>tidus.ffx</span><br>
           <span class="realName">Tidus Shuyin</span>
         </div>
-        <a href='#' class="followhim">Passa</a>
+        <a href='#' class="followhim">Passa a</a>
       </li>
       <li class="suggbar">Suggerimenti per te:</li>
       <li v-for="(profile, idx) in profiles" :key="idx">
@@ -48,6 +48,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
+@media only screen and (max-width: 1300px) {
+  .suggProfiles {
+    display: none;
+  }
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -63,56 +68,56 @@ img {
 }
 ul {
   li {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 10px 0;
-      img {
-        margin: 0 7px;
-        cursor: pointer;
-      }
-      div {
-        font-size: 13px;
-        font-weight: bold;
-        width: 170px;
-        text-align: left;
-      }
-      a {
-        text-decoration: none;
-        color: #7bbaf7;
-        font-size: 13px;
-        font-weight: bolder;
-        &:hover {
-          color: #547ea7;
-        }
-      }
-      img.profileOwn {
-        width: 64px;
-        height: 64px;
-      }
-      span.realName {
-        font-weight: normal;
-        color: darkgrey;
-      }
-      div.ownerInfo {
-        width: 137px;
-        padding-left: 15px;
-      }
-      div.suggNicknames {
-        padding-left: 10px;
-      }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+    img {
+      margin: 0 7px;
+      cursor: pointer;
     }
-    li.suggbar {
+    div {
       font-size: 13px;
       font-weight: bold;
-      margin: 20px 0;
+      width: 170px;
+      text-align: left;
+    }
+    a {
+      text-decoration: none;
+      color: #7bbaf7;
+      font-size: 13px;
+      font-weight: bolder;
+      &:hover {
+        color: #547ea7;
+      }
+    }
+    img.profileOwn {
+      width: 64px;
+      height: 64px;
+    }
+    span.realName {
+      font-weight: normal;
       color: darkgrey;
     }
-    li.copyright {
-      font-size: 13px;
-      margin: 40px 0;
-      color: darkgrey;
+    div.ownerInfo {
+      width: 124px;
+      padding-left: 15px;
+    }
+    div.suggNicknames {
+      padding-left: 10px;
     }
   }
-  
+  li.suggbar {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: darkgrey;
+  }
+  li.copyright {
+    font-size: 13px;
+    margin: 40px 0;
+    color: darkgrey;
+  }
+}
+
 </style>
