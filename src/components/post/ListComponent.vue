@@ -19,7 +19,7 @@ export default {
     posts: [],
     showAll: false
   }),
-  mounted() {
+  created() {
     axios.get('https://flynn.boolean.careers/exercises/api/boolgram/posts')
       .then(({data}) => this.posts = data)
       .finally(() => console.log('Posts Data loading completed.'));
