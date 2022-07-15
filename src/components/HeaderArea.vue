@@ -1,42 +1,32 @@
 <template>
-
   <header>
-    <div id="logo">
-      Boolgram
-    </div>
+    <div id="logo">Boolgram</div>
     <div class="searchbar">
-      <input type="text" name="searchbar" value="" placeholder="Cerca">
+      <input type="text" name="searchbar" value="" placeholder="Cerca" />
     </div>
     <div class="userinfo">
       <i class="fas fa-home"></i>
       <i class="far fa-paper-plane"></i>
       <i class="far fa-compass"></i>
       <i class="far fa-heart"></i>
-      <img src="https://i.imgur.com/TXzx3Df.jpg" class="profileHead">
+      <img src="https://i.imgur.com/TXzx3Df.jpg" class="profileHead" />
     </div>
   </header>
-
 </template>
 
 <script>
-
 export default {
-  name: 'HeaderArea',
-  data: function() {
-    return {
-    };
+  name: "HeaderArea",
+  data: function () {
+    return {};
   },
-  props: {
-  },
-  methods: {
-  }
-}
-
+  props: {},
+  methods: {},
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-
+<style scoped>
 @media only screen and (max-width: 1100px) {
   header {
     padding: 15px 150px !important;
@@ -60,43 +50,40 @@ export default {
 header {
   display: flex;
   justify-content: space-between;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   background-color: white;
-  padding: 15px 300px;
+  padding: 15px 200px;
   border-bottom: solid 2px #e9e9e9;
-  #logo {
-    font-weight: bolder;
-    font-size: 40px;
-    cursor: pointer;
-  }
-  .searchbar {
-    input {
-      height: 30px;
-      border: solid 2px #e9e9e9;
-      text-align: center;
-      margin-top: 10px;
-      background-color: #fafafa;
-    }
-  }
-  div.userinfo {
-    display: flex;
-    align-items: center;
-    // padding-top: 14px;
-    i {
-      cursor: pointer;
-      margin-right: 15px;
-      font-size: 18px;
-      &:hover {
-        color: rgb(238, 39, 87);
-      }
-    }
-    img {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-  }
 }
-
+header #logo {
+  font-family: 'Dancing Script';
+  font-weight: bolder;
+  font-size: 40px;
+  cursor: pointer;
+}
+header .searchbar input {
+  height: 30px;
+  border: solid 2px #e9e9e9;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #fafafa;
+}
+header div.userinfo {
+  display: flex;
+  align-items: center;
+}
+header div.userinfo i {
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 18px;
+}
+header div.userinfo i:hover {
+  color: #ee2757;
+}
+header div.userinfo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 </style>

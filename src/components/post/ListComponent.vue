@@ -9,7 +9,7 @@
 <script>
 
 import axios from 'axios';
-import Post from './Item'
+import Post from './ItemComponent'
 export default {
   name: 'PostsList',
   components: {

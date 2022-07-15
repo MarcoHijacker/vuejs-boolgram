@@ -1,52 +1,45 @@
 <template>
-
   <div id="app">
-    <HeaderArea/>
+    <HeaderArea />
     <div class="fullBlock">
       <div class="leftBlock">
-        <SuggStories/>
-        <PostsList/>
+        <SuggStories />
+        <PostsList />
       </div>
       <div class="rightBlock">
-        <SuggProfiles/>
+        <SuggProfiles />
       </div>
     </div>
-    <FooterArea/>
+    <FooterArea />
   </div>
-
 </template>
 
 <script>
-
-import SuggProfiles from './components/SuggProfiles.vue'
-import SuggStories from './components/SuggStories.vue'
-import HeaderArea from './components/HeaderArea.vue'
-import PostsList from './components/post/List.vue'
-import FooterArea from './components/FooterArea.vue'
+import SuggProfiles from "./components/SuggProfiles.vue";
+import SuggStories from "./components/SuggStories.vue";
+import HeaderArea from "./components/HeaderArea.vue";
+import PostsList from "./components/post/ListComponent.vue";
+import FooterArea from "./components/FooterArea.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     SuggProfiles,
     SuggStories,
     HeaderArea,
     PostsList,
-    FooterArea
-  }
-}
-
+    FooterArea,
+  },
+};
 </script>
 
-<style lang="scss">
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 @media only screen and (max-width: 1300px) {
-  .fullBlock {
-    .leftBlock {
-      width: 100%;
-      margin-right: 0 !important;
-    }
+  .fullBlock .leftBlock {
+    width: 100%;
+    margin-right: 0 !important;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -55,23 +48,19 @@ export default {
   }
 }
 @media only screen and (max-width: 1100px) {
-  .fullBlock {
-    .rightBlock {
-      padding-right: 150px !important;
-    }
-    .leftBlock {
-      padding-left: 150px !important;
-    }
+  .fullBlock .rightBlock {
+    padding-right: 150px !important;
+  }
+  .fullBlock .leftBlock {
+    padding-left: 150px !important;
   }
 }
 @media only screen and (max-width: 700px) {
-  .fullBlock {
-    .rightBlock {
-      padding-right: 30px !important;
-    }
-    .leftBlock {
-      padding-left: 30px !important;
-    }
+  .fullBlock .rightBlock {
+    padding-right: 30px !important;
+  }
+  .fullBlock .leftBlock {
+    padding-left: 30px !important;
   }
 }
 * {
@@ -95,10 +84,10 @@ body {
   padding-top: 50px;
 }
 .leftBlock {
-  padding-left: 300px;
+  padding-left: 200px;
+  width: 100%;
 }
 .rightBlock {
-  padding-right: 300px;
+  padding-right: 200px;
 }
-
 </style>

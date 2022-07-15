@@ -1,4 +1,4 @@
-# vue-js-boolgram
+# vuejs-boolgram-fix
 
 ## Project setup
 ```
